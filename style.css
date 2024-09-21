@@ -1,0 +1,143 @@
+:root {
+    --bs-primary: #3498db;
+    --bs-secondary: #2c3e50;
+    --bs-success: #2ecc71;
+    --bs-info: #3498db;
+    --bs-warning: #f39c12;
+    --bs-danger: #e74c3c;
+    --bs-light: #ecf0f1;
+    --bs-dark: #34495e;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(44, 62, 80, 0.9);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--bs-light) !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--bs-primary) !important;
+}
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/tyhb_12.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--bs-light);
+}
+
+.btn-custom {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--bs-danger);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 3px;
+    background-color: var(--bs-danger);
+}
+
+#about,
+#projects,
+#contact {
+    padding: 5rem 0;
+}
+
+#about {
+    background-color: var(--bs-light);
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-list li {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project-card {
+    height: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#contact {
+    background-color: var(--bs-secondary);
+    color: var(--bs-light);
+}
+
+#contact form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+#contact .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: var(--bs-light);
+}
+
+#contact .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
